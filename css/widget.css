@@ -1,0 +1,141 @@
+/************Widget**************/
+
+.widget {
+    margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+.widget .widget-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 1px;
+}
+.widget .widget-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 40px;
+    height: 2px;
+    background: #6f43d6;
+}
+.widget .list{
+	position:relative;
+	list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget .list li{
+	position:relative;
+	padding:8px 0px;
+	border-bottom:1px solid #dadada;
+	line-height:32px;	
+}
+
+.widget .list li .count{
+	position:relative;
+	float:right;
+	line-height:32px;	
+	color:#6f43d6;
+}
+.widget .list li a span {
+	color: #333333;
+}
+.dark .widget .list li a span {
+	color: #ffffff;
+}
+
+.widget .list li a{
+	position:relative;
+	display:block;
+	color:#333333;
+	font-size:0.9em;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+.widget .list li a:hover{
+	color:#6f43d6;	
+}
+
+.widget .checklist-outer{
+	margin-right:0px !important;
+	max-height:320px;
+	overflow:auto;	
+}
+
+.widget .post {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.widget .post li {
+	border-bottom: 1px solid #dddddd;
+	float: left;
+	padding: 30px 0;
+	width: 100%;
+}
+
+.widget .post li h5 {
+	margin: 0;
+}
+.widget .post img {
+	width: 64px;
+	float: left;
+	margin-right: 15px;
+}
+.widget .post time {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.gallery-widget {
+	margin:0;
+	padding: 0;
+	list-style: none;
+
+}
+.gallery-widget li {
+	
+	display: inline-block;
+	width: 24%;
+	margin-bottom: -4px;
+}
+
+.gallery-widget li  img {
+    cursor: pointer;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+/*********Tags*************/
+.widget .tags {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.widget .tags li {
+	display: inline-block;
+	line-height: 42px;
+	
+}
+.widget .tags li a {
+	background: none;
+	color: #666666;
+	padding: 9px 15px;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 1px solid #aaaaaa;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	border-radius: 50px;
+    -webkit-border-radius: 50px;
+
+}
+.widget .tags li a:hover { 
+	background: #6f43d6;
+	color: #ffffff;
+	border: 1px solid #6f43d6;
+}
