@@ -35,7 +35,7 @@
     background: #ff3535;
     width: 300px;
     height: 65px;
-    color: #ffffff !important;
+    /* olor: #ffffff !important; */
     font-size: 28px;
     font-weight: 500;
     line-height: 50px;
@@ -133,7 +133,7 @@
 .c-button {
     display: flex;
     justify-content: flex-end;
-    margin-top: 55px;
+    margin-top: 0;
 }
 .gray {
     font-size: 20px;
@@ -197,7 +197,7 @@
 
 
 .footer ul li {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
     color: #ffffff;
     font-family: 'Google Sans';
     font-size: 15px;
@@ -252,7 +252,7 @@
     margin-bottom:0 !important;
 }
 .expand-red {
-    height:79.45px;
+    height:80px;
     background-color: #b82020;
     position: absolute;
     bottom:0;
@@ -288,7 +288,7 @@
 }
 
 .topLine {
-    margin-left: 70px;
+    margin-left: 245px;
 }
 .topLine i {
     margin-right: 10px;

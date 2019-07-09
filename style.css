@@ -23,6 +23,26 @@ Author URL: http://themeforest.net/user/yasirzia
 /*  Theme default CSS
 /*----------------------------------------*/
 
+
+/* fixed nav bar */
+
+.top_line{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+.top_line {
+	margin-top: 10px;
+    margin-left: 245px;
+
+    
+}
+
+.navbar{
+	border-radius: 0 !important;
+	border: 0; !important;
+}
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -36,9 +56,20 @@ body {
 	line-height: 1.8;
 	overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-weight: 700;
-	color: #2b2e2f;
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+	font-family: MuseoSansCyrlimport;
+	font-weight: 900;
+	color: #2c2f30;
+	text-transform: capitalize;
+	margin-top: 0;
+} 
+
+h1, .h1 {
+	font-family: MuseoSansCyrlimport;
+	font-weight: 900;
+	color: #262524;
+	font-size: 47px !important;
+	letter-spacing: 2.35px;
 	text-transform: capitalize;
 }
 a {
@@ -185,7 +216,7 @@ footer {
 	width: 100%;
 	max-width: 70%;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .section-header .section-title:before {
 	content: "";
@@ -209,6 +240,21 @@ footer {
 	border-radius: 0px;
 	background: #f26522;
 }
+
+/* .button{
+	position: relative;
+    border-radius: 50px;
+	margin-bottom: 20px;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+.button :hover{
+	color: #000;
+} */
 .btn {
 	border-radius: 50px;
 	margin-bottom: 20px;
@@ -235,7 +281,7 @@ footer {
     background-size: 2em 100%;
 }
 .btn.btn-default {
-	color: #ea308b;
+	color: #fff;
 	border: 1px solid #aaaaaa;
 	
 }
@@ -288,9 +334,19 @@ ul.nostyle i {
 .align-center {
 	margin: 0 auto;
 }
+
+.padding-partner-logo {
+    padding-top: 0 !important; 
+}
 .padding {
-	padding: 80px 0;
+	padding: 80px 0 0 0;
 	/*padding: 80px 0 60px;*/
+}
+.padding-0-80{
+	padding: 80px 0 0 0; 
+}
+.padding-50-100{
+	padding: 50px 30px 100px 30px;
 }
 .padding-100-80 {
 	padding: 100px 0 80px;
@@ -1207,6 +1263,10 @@ Social Icons
 	color: #ff3197;
 }
 
+@font-face{
+	font-family: MuseoSansCyrlimport;
+    src:url("fonts/MuseoSansCyrl.otf");
+}
 /**********
 Parallax Elements
 ***********/
