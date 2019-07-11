@@ -26,6 +26,10 @@ Author URL: http://themeforest.net/user/yasirzia
 
 /* fixed nav bar */
 
+
+.title_padding{
+	padding-left: 70px;
+}
 .top_line{
     display: flex;
     justify-content: space-between !important;
@@ -33,7 +37,8 @@ Author URL: http://themeforest.net/user/yasirzia
 }
 .top_line {
 	margin-top: 10px;
-    margin-left: 245px;
+    margin-left: 240px;
+    margin-right: 17px
 
     
 }
@@ -57,11 +62,11 @@ body {
 	overflow-x: hidden;
 }
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
-	font-family: MuseoSansCyrlimport;
+	/* font-family: MuseoSansCyrlimport; */
 	font-weight: 900;
 	color: #2c2f30;
-	text-transform: capitalize;
-	margin-top: 0;
+	/* text-transform: capitalize;
+		 */	margin-top: 0;
 } 
 
 h1, .h1 {
@@ -70,7 +75,7 @@ h1, .h1 {
 	color: #262524;
 	font-size: 47px !important;
 	letter-spacing: 2.35px;
-	text-transform: capitalize;
+	
 }
 a {
 	color: #ff3535;
@@ -293,7 +298,7 @@ footer {
 .btn.btn-default:hover, .btn.btn-default:focus {
 	background: #ffffff;
 	border: 1px solid #ea308b;
-	color: #666666;
+	color: #000;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus {
 	background: #643cc1;

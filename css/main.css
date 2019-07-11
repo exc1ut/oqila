@@ -205,6 +205,7 @@
 }
 
 .footer .title {
+    
     color: #8e8e8e;
     font-size: 20px;
     font-weight: 500;
@@ -216,7 +217,8 @@
 }
 .footer-about {
     width: 300px;
-    padding: 36px;
+
+    padding: 35px 40px;
     background: #ff3535;
 }
 .footer-about i {
