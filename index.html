@@ -55,6 +55,9 @@
 	  ga('create', 'UA-100415391-2', 'auto');
 	  ga('send', 'pageview');
 
+     
+
+
 	</script>
 </head>
 
@@ -81,7 +84,20 @@
                     </div>
                     <div class="lang">
                         <!-- <i class="fas fa-language"></i> -->
-                        <img src="img/change-langue.png">
+
+                         <div class="dropdown ">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/change-langue.png">
+                              </a>
+                         
+                              <div style="margin-right: 20px;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item d_m_items" href="#">Uzbek</a>
+                                <a class="dropdown-item d_m_items" href="#">Russion</a>
+                                <a class="dropdown-item d_m_items" href="#">English</a>
+                              </div>
+                        </div> 
+                        
+                        
                    </div>
                 </div>
                     
@@ -95,42 +111,101 @@
     <nav id="main-menu" class="navbar navbar-inverse navbar-sticky-top navbar_border" data-spy="affix" data-offset-top="100">
         <div class="container">
         
-            
             <div class="navs">
-            <div class="navbar-header">
-                <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html"><img src="img/Logo.png"></a> </div>
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html"><img src="img/Logo.png"></a> 
+                </div>
             
                 <div class="navbar-collapse collapse" id="navbar">
-            <div class="nav-align">
-                    <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><p style="font-size: 15px">Разработка сайтов</p></a></li>
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Интернет-реклама</p></a></li>
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Дизайн-проекты</p></a>
-			</li>
-            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Все услуги</p></a>
-			
-			</li>
-          </ul>
-          <div class="expand-red">
-          </div>
-          <div class="curve">
-              <img src="img/curve.png">
-          <ul class="nav navbar-nav navbar-right r-navbar">
-                
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Цены</p></a></li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">О нас</p></a></li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Портфолио</p></a></li>
-              </ul>
-            </div>
-        </div>
-    </div>
+                    <div class="nav-align">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html"><p style="font-size: 15px">Разработка сайтов</p></a></li>
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Интернет-реклама</p></a></li>
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Дизайн-проекты</p></a>
+                    			</li>
+                              <!--   <li><button onclick="toggle()" style="font-size: 15px">Все услуги :</button></li>
+                              <div class="toggle toggle_button">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quibusdam nihil provident placeat ratione accusantium!
+                              </div> -->
+                                <li><a href="#" onclick="toggle()" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Все услуги :</p></a>
+                    			 </li>
+                 
+                            </ul>
+                            <div class="expand-red">  </div>
+                            <div class="curve">
+                                <img src="img/curve.png">
+                                <ul class="nav navbar-nav navbar-right r-navbar">
+                                
+                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Цены</p></a></li>
+                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">О нас</p></a></li>
+                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Портфолио</p></a></li>
+                                </ul>
+                            </div>
+                    </div>
                 </div>
+            </div>
+              
             <!--/.nav-collapse -->
         </div>
-    </nav>    
+
+    </nav> 
+   
+    <section id ="toggle">
+        <div style="display: flex;" class="container">
+            <div class="col-md-3" >
+                <ul >
+                    <li style="color: white; padding: 0;">Разработка сайтов</li>
+                    <li style="padding-top: 20px;">  Landing page</li>
+                    <li>  Интернет-магазин</li>
+                    <li>  Сайт-визитка</li>
+                    <li>  Корпоративный</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3" >
+                 <ul >
+                    <li style="color: #ffffff; padding: 0;">Интернет-реклама</li>
+                    <li style="padding-top: 20px;">  SEO-оптимизация</li>
+                    <li >  SMM-продвижение</li>
+                    <li >  Контекстная реклама</li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3" >
+                  <ul >
+                    <li style="color: #fff; padding: 0;">Дизайн-проекты</li>
+                    <li style="padding-top: 20px; ">  Веб-дизайн</li>
+                    <li >  Фирменный стиль</li>
+                    <li >  Полиграфия</li>
+                    <li >  Прототип мобильных <br>  приложений </li>
+                </ul>
+            </div>
+            <div class="col-md-3" >
+                <ul >
+                    <li style="color: #fff; padding: 0;">Другие услуги</li>
+                    <li  style="padding-top: 20px;">  Телеграм-боты</li>
+                    <li >  Крупные проекты</li>
+                    <li >  Мобильные <br>  приложения</li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3" >
+                <ul >
+                    <li style="color: #fff; padding: 0;">Наши проекты</li>
+                    <li style="padding-top: 20px;">  AslBazar</li>
+                    <li >  OqilaCMS</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <div id="banner">
+
         <div class="container">
+
             <div class="banner-items">
+
                 <p class="banner-text">
                         Мы сделаем сайт,<br>
                         который вам понравится
@@ -488,6 +563,47 @@
 </script>
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/c572c57f9d.js"></script>
+<!-- <script >
+     function toggle(){
+        var x = document.getElementById('toggle');
+        if(x.style.display ==="none"){
+            x.style.display ="block";
+            
+        } else {
+            x.style.display ="none";
+            
+        }
+
+    }
+</script> -->
+<script >
+     function toggle(){
+        var x = document.getElementById('toggle');
+        if(x.style.display ==="none"){
+            x.style.display ="block";
+            
+        } else {
+            x.style.display ="none";
+            
+        }
+
+    }
+</script>
+
+<!-- <script type="text/javascript">
+    function t_f(){
+        var x = document.getElementById('toggle');
+        console.log(x)
+    }
+</script> -->
+
+<!-- <script type="text/javascript">
+    function t_func(){
+        var x = document.getElementById("myDiv");
+        element.classList.toggle("toggle");
+    }
+</script> -->
+
 <script type="text/javascript">
 $(document).ready(function () {
     
