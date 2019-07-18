@@ -107,6 +107,7 @@
 .number {
     color: #cecece;
     margin-left: 25px;
+    font-size: 20px;
 }
 .fa-language {
     color: #cecece;
@@ -131,8 +132,9 @@
     letter-spacing: 2px;
 }
 .content-box {
-    height: 550px;
-    padding: 57px;
+   /*  height: 550px; */
+   /*  padding: 57px 57px 40px 100px; */
+       padding: 30px 25px 0;
 
 }
 .content-box a {
@@ -150,7 +152,7 @@
     font-weight: 100;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 139px;
+    margin-bottom: 100px;
 }
 .content-box-left{
     border-bottom:#ff3535 12px solid !important;
@@ -258,6 +260,7 @@
     font-size: 20px;
 }
 .read {
+    font-size: 14px;
     border:0;
     background:#f12424;
     border-radius: 30px;
@@ -285,7 +288,7 @@
 
 
 .footer ul li {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     color: #ffffff;
     font-family: 'Google Sans';
     font-size: 15px;
