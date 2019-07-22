@@ -110,11 +110,11 @@
     color: #fff !important;
     background-color: #262524;
     border-bottom: 0 !important;
-    margin-right: 20px;
+   /*  margin-right: 20px; */
     top: 55px;
     left: -845px;
 
-    width: 1350px;
+    width: 1370px;
     height: 280px;
     min-width: 100px;
 }
