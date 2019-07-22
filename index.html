@@ -122,31 +122,13 @@
                                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Интернет-реклама</p></a></li>
                                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Дизайн-проекты</p></a>
                     			</li>
-                              <!--   <li><button onclick="toggle()" style="font-size: 15px">Все услуги :</button></li>
-                              <div class="toggle toggle_button">
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quibusdam nihil provident placeat ratione accusantium!
-                              </div> -->
-                     <!-- <div class="dropdown ">
-                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img style="margin-bottom: 10px;" src="img/change-langue.png">
-                              </a>
-                         
-                              <div style="margin-right: 20px;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item d_m_items" href="#">Uzbek</a>
-                                <a class="dropdown-item d_m_items" href="#">Russion</a>
-                                <a class="dropdown-item d_m_items" href="#">English</a>
-                              </div>
-                        </div>  -->
- <!--  
-                               <li><a href="#" onclick="toggle()" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Все услуги :</p></a>
-                                </li> -->
-
+                  
 
                                 <li>
                                 <div style="margin: 22px 0" class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Все услуги :</p></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Все услуги <img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
 
-                                    <div  class="dropdown-menu d_m_vse_uslugi" aria-labelledby="dropdownMenuLink">
+                                    <div  id="demo6" class="dropdown-menu d_m_vse_uslugi" aria-labelledby="dropdownMenuLink">
                                       <div class="container">
                                         
                                         <ul style="margin-left: 30px;">
@@ -196,13 +178,13 @@
                  
                             </ul>
                             <div class="expand-red">  </div>
-                            <div class="curve">
+                            <div id="demo_aaa" class="curve">
                                 <img src="img/curve.png">
-                                <ul class="nav navbar-nav navbar-right r-navbar">
+                                <ul  class="nav navbar-nav navbar-right r-navbar">
                                 
-                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Цены</p></a></li>
-                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">О нас</p></a></li>
-                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Портфолио</p></a></li>
+                                    <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p id="demo3" style="font-size: 15px">Цены</p></a></li>
+                                    <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p id="demo4" style="font-size: 15px">О нас</p></a></li>
+                                    <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p id="demo5" style="font-size: 15px">Портфолио</p></a></li>
                                 </ul>
 
                             </div>
@@ -707,6 +689,30 @@
     function red_tel(){
         var y = document.getElementById('')
 
+    }
+</script>
+
+
+<script type="text/javascript">
+    window.onscroll=function()
+    {myfunction()};
+
+    var header=document.getElementById("demo_aaa");
+    var sticky = header.offsetTop;
+
+    function myfunction(){
+        if(window.pageYOffset > sticky){
+            header.classList.add("sticky");
+            document.getElementById("demo3").innerHTML="+998 71 268 43 60";
+            
+
+            document.getElementById("demo4").innerHTML="+998 71 268 43 60";
+            document.getElementById("demo5").innerHTML="";
+            document.getElementById("demo6").style.left="-750px";
+
+        }else{
+            header.classList.remove("sticky");
+        }
     }
 </script>
 
