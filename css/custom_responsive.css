@@ -1,0 +1,7 @@
+.number {
+	margin-left: 0 !important;
+	color: #cecece;
+}
+
+@media only screen and (max-width: 1119px) {
+}
