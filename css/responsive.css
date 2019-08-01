@@ -500,9 +500,12 @@
 	}
 }
 @media (max-width: 641px) {
-	.numbers {
-		flex-direction: column;
-		display: none;
+	.numbers p,
+	.numbers p i {
+		font-size: 8px !important;
+	}
+	.numbers img {
+		transform: scale(0.5);
 	}
 }
 @media (max-width: 480px) and (min-width: 320px) {
@@ -555,5 +558,46 @@
 	.footer-about p {
 		max-width: 250px;
 		padding-bottom: 0;
+	}
+	.photo-works {
+		width: 75%;
+	}
+	.photo-works a {
+		width: auto !important;
+	}
+	.photo-works img {
+		width: 100% !important;
+		height: 123px !important;
+		transform: none !important;
+	}
+	.photo-works a:nth-child(1) {
+		width: 100% !important;
+	}
+	.photo-works a:nth-child(2) {
+		width: 60% !important;
+		height: auto !important;
+	}
+	.photo-works a:nth-child(3) {
+		width: 40% !important;
+		height: auto !important;
+	}
+	.photo-works a:nth-child(4) {
+		width: 40% !important;
+		height: auto !important;
+	}
+	.photo-works a:nth-child(5) {
+		width: 60% !important;
+		height: auto !important;
+	}
+	.photo-works a:nth-child(6) {
+		width: 40% !important;
+		height: auto !important;
+	}
+	.photo-works a:nth-child(7) {
+		width: 60% !important;
+		height: auto !important;
+	}
+	.fa.fa-quote-left.testimonials-quote {
+		display: none;
 	}
 }
