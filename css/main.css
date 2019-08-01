@@ -3,6 +3,19 @@
 		background: #262524;
 	}
 }
+
+body {
+	font-family: 'Roboto';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Google sans', sans-serif !important;
+}
+
 .top-nav {
 	background-color: #262524;
 }
@@ -152,6 +165,7 @@
 .banner-text {
 	font-weight: 100 !important;
 	letter-spacing: 5px;
+	font-family: 'Google sans', sans-serif;
 }
 .order {
 	margin-top: 85px !important;
@@ -227,7 +241,7 @@
 .section-title h1 {
 	font-size: 47px;
 	font-weight: 900;
-	font-family: 'MuseoSansCyrlW03-700', sans-serif;
+	font-family: 'Google sans', sans-serif;
 }
 .section-title p {
 	font-size: 16px;
@@ -288,7 +302,7 @@
 }
 .desc {
 	font-weight: 500;
-	font-family: 'Roboto';
+	font-family: 'Open sans';
 	color: #252523;
 	font-size: 20px;
 }
@@ -454,4 +468,7 @@
 .partner-logos-flex img {
 	margin-right: 50px;
 	margin-top: 50px;
+}
+.footer-about p {
+	font-family: 'Open sans';
 }
