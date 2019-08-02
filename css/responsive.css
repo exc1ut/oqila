@@ -219,9 +219,6 @@
 	.parallax-element {
 		display: none;
 	}
-	.number:nth-child(3) {
-		margin-left: 180px !important;
-	}
 }
 
 @media (min-width: 1366px) {
@@ -600,7 +597,6 @@
 	.fa.fa-quote-left.testimonials-quote {
 		display: none;
 	}
-}
 @media screen and (min-width: 768px) {
 	.carousel-indicators {
 		bottom: 0px;

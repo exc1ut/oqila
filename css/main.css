@@ -24,6 +24,7 @@ h6 {
 	display: flex;
 	justify-content: space-between !important;
 	align-items: center;
+	margin-left: -15px;
 }
 #myDiv {
 }
@@ -154,8 +155,13 @@ h6 {
 
 .number {
 	color: #cecece;
-	margin-left: 25px;
-	font-size: 20px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 15px;
+	border-right: #212020 2px solid;
+}
+.number:last-child {
+	border-right: none;
 }
 .fa-language {
 	color: #cecece;
@@ -514,4 +520,17 @@ h6 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.dropdown p {
+	font-weight: 500;
+	color: #ffffff;
+	transition: all .3s;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.dropdown p:hover {
+	font-weight: 500;
+	color: #ff3535;
 }
