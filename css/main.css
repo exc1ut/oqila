@@ -119,7 +119,6 @@ h6 {
 	left: -845px;
 
 	width: 1370px;
-	height: 280px;
 	min-width: 100px;
 }
 .d_m_vse_uslugi::before {
@@ -150,7 +149,7 @@ h6 {
 	display: inline-table;
 }
 .d_m_vse_uslugi ul li {
-	padding: 10px 20px;
+	padding: 5px 20px;
 }
 
 .number {
@@ -395,7 +394,7 @@ h6 {
 	bottom: 0;
 	right: 0;
 }
-#banner {
+.banner {
 	height: 400px;
 	background: url(../img/banner.png) no-repeat center center;
 	background-size: cover;
@@ -444,7 +443,7 @@ h6 {
 }
 .partner-logos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	padding-bottom: 50px;
 	padding-top: 50px;
 }
@@ -471,4 +470,46 @@ h6 {
 }
 .footer-about p {
 	font-family: 'Open sans';
+}
+.card-title {
+	color: #252523;
+}
+.carousel-fade .carousel-inner .item {
+	transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+	height: 400px;
+}
+.glyphicon {
+	top: 50%;
+}
+.partner-logos img {
+	width: 150px;
+	height: 65px;
+}
+#demo6 li {
+	font-size: 18px;
 }
