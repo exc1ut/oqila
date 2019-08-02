@@ -159,6 +159,7 @@ h6 {
 	padding-right: 12px;
 	font-size: 15px;
 	border-right: #212020 2px solid;
+	font-weight: 500;
 }
 .number:last-child {
 	border-right: none;
@@ -533,4 +534,11 @@ h6 {
 .dropdown p:hover {
 	font-weight: 500;
 	color: #ff3535;
+}
+#demo6 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.dropdown-menu {
+	font-size: 15px;
 }
