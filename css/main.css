@@ -149,7 +149,7 @@ h6 {
 	display: inline-table;
 }
 .d_m_vse_uslugi ul li {
-	padding: 5px 20px;
+	padding: 3px 20px;
 }
 
 .number {
@@ -507,9 +507,6 @@ h6 {
 	top: 50%;
 }
 .partner-logos img {
-	width: 150px;
-	height: 65px;
-}
-#demo6 li {
-	font-size: 18px;
+	width: 200px;
+	height: 80px;
 }
