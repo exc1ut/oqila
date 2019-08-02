@@ -510,3 +510,8 @@ h6 {
 	width: 200px;
 	height: 80px;
 }
+.quote {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
