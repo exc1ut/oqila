@@ -14,221 +14,207 @@
 */
 $(document).ready(function() {
 	'use strict';
-	
-/////////////////////////////////////////////////////////////////
-// Revolution Slider
-/////////////////////////////////////////////////////////////////
-		
-			$('.tp-banner').show().revolution(
-					{
-						dottedOverlay:"none",
-						delay:5000,
-						startwidth:1170,
-						startheight:700,
-						hideThumbs:200,
 
-						thumbWidth:100,
-						thumbHeight:50,
-						thumbAmount:5,
+	/////////////////////////////////////////////////////////////////
+	// Revolution Slider
+	/////////////////////////////////////////////////////////////////
 
-					    navigationType:"bullet",
-						navigationArrows:"none",
-						navigationStyle:"preview2",
+	$('.tp-banner').show().revolution({
+		dottedOverlay: 'none',
+		delay: 5000,
+		startwidth: 1170,
+		startheight: 700,
+		hideThumbs: 200,
 
-						touchenabled:"on",
-						onHoverStop:"off",
-						
-						//disableProgressBar: "on",
+		thumbWidth: 100,
+		thumbHeight: 50,
+		thumbAmount: 5,
 
-						swipe_velocity: 0.7,
-						swipe_min_touches: 1,
-						swipe_max_touches: 1,
-						drag_block_vertical: false,
+		navigationType: 'bullet',
+		navigationArrows: 'none',
+		navigationStyle: 'preview2',
 
-						parallax:"mouse",
-						parallaxBgFreeze:"on",
-						parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+		touchenabled: 'on',
+		onHoverStop: 'off',
 
-						keyboardNavigation:"off",
+		//disableProgressBar: "on",
 
-						navigationHAlign:"center",
-						navigationVAlign:"bottom",
-						navigationHOffset:0,
-						navigationVOffset:20,
+		swipe_velocity: 0.7,
+		swipe_min_touches: 1,
+		swipe_max_touches: 1,
+		drag_block_vertical: false,
 
-						soloArrowLeftHalign:"left",
-						soloArrowLeftValign:"center",
-						soloArrowLeftHOffset:20,
-						soloArrowLeftVOffset:0,
+		parallax: 'mouse',
+		parallaxBgFreeze: 'on',
+		parallaxLevels: [ 7, 4, 3, 2, 5, 4, 3, 2, 1, 0 ],
 
-						soloArrowRightHalign:"right",
-						soloArrowRightValign:"center",
-						soloArrowRightHOffset:20,
-						soloArrowRightVOffset:0,
-						
+		keyboardNavigation: 'off',
 
-						shadow:0,
-						fullWidth:"on",
-						fullScreen:"on",
+		navigationHAlign: 'center',
+		navigationVAlign: 'bottom',
+		navigationHOffset: 0,
+		navigationVOffset: 20,
 
-						spinner:"",
+		soloArrowLeftHalign: 'left',
+		soloArrowLeftValign: 'center',
+		soloArrowLeftHOffset: 20,
+		soloArrowLeftVOffset: 0,
 
-						stopLoop:"on",
-						stopAfterLoops:0,
-						stopAtSlide:-1,
+		soloArrowRightHalign: 'right',
+		soloArrowRightValign: 'center',
+		soloArrowRightHOffset: 20,
+		soloArrowRightVOffset: 0,
 
-						shuffle:"off",
+		shadow: 0,
+		fullWidth: 'on',
+		fullScreen: 'on',
 
-						autoHeight:"on",
-						forceFullWidth:"off",
-						
+		spinner: '',
 
-						//disableFocusListener:false,
-						
+		stopLoop: 'on',
+		stopAfterLoops: 0,
+		stopAtSlide: -1,
 
-						hideThumbsOnMobile:"off",
-						hideNavDelayOnMobile:1500,
-						hideBulletsOnMobile:"off",
-						hideArrowsOnMobile:"off",
-						hideThumbsUnderResolution:0,
+		shuffle: 'off',
 
-						hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						startWithSlide:0,
-						fullScreenOffsetContainer: "",
-						
-					});
+		autoHeight: 'on',
+		forceFullWidth: 'off',
 
-			
-/////////////////////////////////////////////////////////////////
-// Unit Gallery
-/////////////////////////////////////////////////////////////////
+		//disableFocusListener:false,
 
-        
-            $("#gallery").unitegallery({
-                thumb_width: 200,
-                thumb_height: 120,
-                slider_enable_text_panel: true,
-				gallery_autoplay:false,
-				gallery_pause_on_mouseover: false,
-				slider_enable_fullscreen_button:false
-            });
-       
+		hideThumbsOnMobile: 'off',
+		hideNavDelayOnMobile: 1500,
+		hideBulletsOnMobile: 'off',
+		hideArrowsOnMobile: 'off',
+		hideThumbsUnderResolution: 0,
 
-/////////////////////////////////////////////////////////////////
-// Skills
-/////////////////////////////////////////////////////////////////
+		hideSliderAtLimit: 0,
+		hideCaptionAtLimit: 0,
+		hideAllCaptionAtLilmit: 0,
+		startWithSlide: 0,
+		fullScreenOffsetContainer: ''
+	});
 
-        $('.skills').on('inview', function() {
-            $('.progress .progress-bar').css("width", function() {
-                return $(this).attr("aria-valuenow") + "%";
-            })
+	/////////////////////////////////////////////////////////////////
+	// Unit Gallery
+	/////////////////////////////////////////////////////////////////
+
+	$('#gallery').unitegallery({
+		thumb_width: 200,
+		thumb_height: 120,
+		slider_enable_text_panel: true,
+		gallery_autoplay: false,
+		gallery_pause_on_mouseover: false,
+		slider_enable_fullscreen_button: false
+	});
+
+	/////////////////////////////////////////////////////////////////
+	// Skills
+	/////////////////////////////////////////////////////////////////
+
+	$('.skills').on('inview', function() {
+		$('.progress .progress-bar').css('width', function() {
+			return $(this).attr('aria-valuenow') + '%';
 		});
+	});
 
-/////////////////////////////////////////////////////////////////
-// Progress Bar Percentage
-/////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////
+	// Progress Bar Percentage
+	/////////////////////////////////////////////////////////////////
 
-		
-			$('.progress-bar-percent').counterUp({
-				delay: 10,
-				time: 2000
-			});
-		 
+	$('.progress-bar-percent').counterUp({
+		delay: 10,
+		time: 2000
+	});
 
-/////////////////////////////////////////////////////////////////
-// Search Popup
-/////////////////////////////////////////////////////////////////
-
+	/////////////////////////////////////////////////////////////////
+	// Search Popup
+	/////////////////////////////////////////////////////////////////
 
 	$('a[href="#search"]').on('click', function(event) {
-        event.preventDefault();
-        $('#search').addClass('open');
-        $('#search > form > input[type="search"]').focus();
-    });
-    
-    $('#search, #search button.close').on('click keyup', function(event) {
-        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-            $(this).removeClass('open');
-        }
-    });
-    
-    $('form').submit(function(event) {
-        event.preventDefault();
-        return false;
-    })
+		event.preventDefault();
+		$('#search').addClass('open');
+		$('#search > form > input[type="search"]').focus();
+	});
 
+	$('#search, #search button.close').on('click keyup', function(event) {
+		if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+			$(this).removeClass('open');
+		}
+	});
 
-		
-/////////////////////////////////////////////////////////////////
-// Smooth Scrolling
-/////////////////////////////////////////////////////////////////
+	$('form').submit(function(event) {
+		event.preventDefault();
+		return false;
+	});
 
-
-
+	/////////////////////////////////////////////////////////////////
+	// Smooth Scrolling
+	/////////////////////////////////////////////////////////////////
 
 	// Add scrollspy to <body>
 	$('body').scrollspy({
-		target: ".navbar",
+		target: '.navbar',
 		offset: 50
 	});
 	// Add smooth scrolling on all links inside the navbar
-	$("#main-menu a").on('click', function(event) {
+	$('#main-menu a').on('click', function(event) {
 		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
+		if (this.hash !== '') {
 			// Prevent default anchor click behavior
 			event.preventDefault();
 			// Store hash
 			var hash = this.hash;
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function() {
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
-			});
+			$('html, body').animate(
+				{
+					scrollTop: $(hash).offset().top
+				},
+				800,
+				function() {
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				}
+			);
 		} // End if
 	});
 
-	
-/////////////////////////////////////////////////////////////////
-// Parallax 
-/////////////////////////////////////////////////////////////////	
-	
-    function simpleParallax() {
-        //This variable is storing the distance scrolled
-        var scrolled = $(window).scrollTop() + 1;
+	/////////////////////////////////////////////////////////////////
+	// Parallax
+	/////////////////////////////////////////////////////////////////
 
-        //Every element with the class "scroll" will have parallax background 
-        //Change the "0.3" for adjusting scroll speed.
-        $('.scroll').css('background-position', '50%' + -(scrolled * 0.3) + 'px');
-    }
-    //Everytime we scroll, it will fire the function
-    $(window).on('scroll', function() {
-        simpleParallax();
-    });	
-	
-	
-	
-	
-/////////////////////////////////////////////////////////////////
-// Lightbox 
-/////////////////////////////////////////////////////////////////		
-	
-	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
+	function simpleParallax() {
+		//This variable is storing the distance scrolled
+		var scrolled = $(window).scrollTop() + 1;
+
+		//Every element with the class "scroll" will have parallax background
+		//Change the "0.3" for adjusting scroll speed.
+		$('.scroll').css('background-position', '50%' + -(scrolled * 0.3) + 'px');
+	}
+	//Everytime we scroll, it will fire the function
+	$(window).on('scroll', function() {
+		simpleParallax();
 	});
 
+	/////////////////////////////////////////////////////////////////
+	// Lightbox
+	/////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////
-// Wow 
-/////////////////////////////////////////////////////////////////	
-	
-new WOW().init();
-	
-	
-	
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
+
+	/////////////////////////////////////////////////////////////////
+	// Wow
+	/////////////////////////////////////////////////////////////////
+
+	new WOW().init();
 }); // Close Function
+
+//media footer expandable
+var toggle = (e) => {
+	console.log(e);
+	e.toggleClass('d-show');
+};

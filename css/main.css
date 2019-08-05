@@ -181,7 +181,7 @@ h6 {
 	width: 300px;
 	height: 65px;
 	/* olor: #ffffff !important; */
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: 500;
 	line-height: 50px;
 	border: 0 !important;
@@ -335,7 +335,10 @@ h6 {
 }
 
 .r-navbar {
+	display: flex;
+	justify-content: space-between;
 	background: #b82020;
+	width: 300px;
 }
 
 .footer ul li {
@@ -357,6 +360,9 @@ h6 {
 	margin-right: 17px;
 }
 .footer-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 300px;
 
 	padding: 35px 35px;
@@ -365,9 +371,11 @@ h6 {
 .footer-about i {
 	color: #fff;
 	font-size: 27px;
-	margin-right: 15px;
+	margin-right: 7px;
+	margin-left: 7px;
 }
 .footer-about p {
+	text-align: center;
 	margin-bottom: 70px;
 	color: #fff;
 }
@@ -389,7 +397,7 @@ h6 {
 }
 .curve {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 .curve img {
 	margin-bottom: 0 !important;
@@ -410,7 +418,7 @@ h6 {
 .banner-items {
 	height: 400px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
@@ -541,4 +549,11 @@ h6 {
 }
 .dropdown-menu {
 	font-size: 15px;
+}
+.nav.navbar-nav.navbar-right.r-navbar > li > a {
+	padding: 10px 5px;
+}
+
+.nav.navbar-nav.navbar-right.r-navbar > li > a:hover {
+	color: #262524;
 }

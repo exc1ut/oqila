@@ -602,7 +602,7 @@
                     <div>
                     <img src="img/Logo.png" alt="Logo">
                     </div>
-                    <ul class="service title_padding">
+                    <ul onclick="toggle(event)" class="service title_padding">
                         <li class="title">Услуги<i class="fas fa-chevron-down"></i></li>
                         <li> <a href="#"> Разработка сайтов </a></li>
                         <li> <a href="#"> SEO-оптимизация </a></li>
@@ -752,7 +752,6 @@
     
     function myfunction(){
         if(window.pageYOffset > sticky){
-            header.classList.add("sticky");
             document.getElementById("demo3").innerHTML="+998 71 268 43 60";
             
 
@@ -761,7 +760,6 @@
             document.getElementById("demo6").style.left="-750px";
 
         }else{
-            header.classList.remove("sticky");
             document.getElementById("demo3").innerHTML="Цены";
             document.getElementById("demo4").innerHTML="О нас";
             document.getElementById("demo5").innerHTML="Портфолио";
