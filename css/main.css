@@ -117,7 +117,7 @@ h6 {
 	border-bottom: 0 !important;
 	/*  margin-right: 20px; */
 	top: 55px;
-	left: -845px;
+	left: 0;
 
 	width: 1370px;
 	min-width: 100px;
@@ -437,7 +437,7 @@ h6 {
 }
 
 .topLine {
-	margin-left: 245px;
+	margin-left: 170px;
 }
 .topLine i {
 	margin-right: 10px;
@@ -546,6 +546,7 @@ h6 {
 #demo6 {
 	padding-top: 25px;
 	padding-bottom: 25px;
+	width: 120vw;
 }
 .dropdown-menu {
 	font-size: 15px;
@@ -556,4 +557,20 @@ h6 {
 
 .nav.navbar-nav.navbar-right.r-navbar > li > a:hover {
 	color: #262524;
+}
+.left-background {
+	position: absolute;
+	width: 50%;
+	height: 536.9px;
+	background: #26222a;
+	border-bottom: #ff3535 12px solid !important;
+	left: 0;
+}
+.right-background {
+	position: absolute;
+	width: 50%;
+	height: 536.9px;
+	background: #302d35;
+	border-bottom: #5e5ebb 12px solid !important;
+	right: 0;
 }
