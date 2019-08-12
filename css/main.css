@@ -392,6 +392,7 @@ h6 {
 	color: #201f1d;
 }
 .copyright p {
+	margin-top: 10px;
 	color: #646463;
 	font-size: 15px;
 }
@@ -468,11 +469,6 @@ h6 {
 		width: 20%;
 	}
 }
-@media (min-width: 768px) {
-	.navbar-brand {
-		margin-bottom: 10px;
-	}
-}
 
 .partner-logos-flex {
 	display: flex;
@@ -544,6 +540,7 @@ h6 {
 	color: #ff3535;
 }
 #demo6 {
+	left: -70vw;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	width: 120vw;
@@ -573,4 +570,10 @@ h6 {
 	background: #302d35;
 	border-bottom: #5e5ebb 12px solid !important;
 	right: 0;
+}
+.navbar-brand {
+	transform: translateY(-5px);
+}
+#carousel {
+	height: 400px;
 }

@@ -105,7 +105,7 @@ Author URL: http://themeforest.net/user/yasirzia
 /* fixed nav bar */
 .news-image {
     height: 220px;
-    width: 340px;
+    max-width: 340px;
 }
 
 

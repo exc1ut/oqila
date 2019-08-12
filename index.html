@@ -128,7 +128,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Все услуги <img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
 
                                     <div  id="demo6" class="dropdown-menu d_m_vse_uslugi" aria-labelledby="dropdownMenuLink">
-                                      <div class="container">
+                                      <div class="container uslugi_dropdown">
                                         
                                         <ul>
                                             <li style="color: white; ">Разработка сайтов</li>
@@ -158,7 +158,6 @@
                                                 <li ><a href="#">  Мобильные <br>  приложения</a></li>
                                                 
                                             </ul>
-                                              <ul >
                                                
                                               <ul >
                                                 <li style="color: #fff; ">Наши проекты</li>
@@ -505,12 +504,12 @@
             </div>
             <div class="partner-logos padding-partner-logo">
                 <div class="partner-logos-flex">
-                    <img src="img/Слой 24.png" alt="">
-                    <img src="img/paynet.png" alt="">
+                    <img src="img/click_1.png" alt="">
+                    <img src="img/paynet_1.png" alt="">
                 </div>
                 <div class="partner-logos-flex" >
                     <img src="img/payme_01.png" alt="">
-                    <img src="img/Layer 1.png" alt="">
+                    <img src="img/ipak yuli_1.png" alt="">
                 </div>   
             </div>
         </div>
@@ -524,7 +523,7 @@
                     </div>
 
               
-                    <div class="col-md-4  ">
+                    <div class="col-md-4 col-sm-6  ">
                         <div class="card">
                             
                             <img class="news-image image " src="img/img-6.jpg">
@@ -544,7 +543,7 @@
                             <a href="#" class="read btn btn-default btn-sm">Читать</a>
                         </div>   
                     </div>
-                    <div class="col-md-4  ">
+                    <div class="col-md-4 col-sm-6  ">
                             <div class="card">
                                 
                                 <img class="news-image image " src="img/img-6.jpg">
@@ -564,7 +563,7 @@
                                 <a href="#" class="read btn btn-default btn-sm">Читать</a>
                             </div>   
                         </div>
-                        <div class="col-md-4  ">
+                        <div class="col-md-4 col-sm-6  ">
                                 <div class="card">
                                     
                                     <img class="news-image image " src="img/img-6.jpg">
@@ -604,7 +603,7 @@
                     <div>
                     <img src="img/Logo.png" alt="Logo">
                     </div>
-                    <ul onclick="toggle(event)" class="service title_padding">
+                    <ul onclick="toggleShow(this)" class="service title_padding">
                         <li class="title">Услуги<i class="fas fa-chevron-down"></i></li>
                         <li> <a href="#"> Разработка сайтов </a></li>
                         <li> <a href="#"> SEO-оптимизация </a></li>
@@ -614,7 +613,7 @@
                         <li> <a href="#"> Разработка мобильных<br>
                                 приложений</a></li>
                     </ul>
-                    <ul class="company title_padding">
+                    <ul onclick="toggleShow(this)" class="company title_padding">
                         <li class="title">Компания<i class="fas fa-chevron-down"></i></li>
                         <li> <a href="#"> О нас </a></li>
                         <li> <a href="#"> Контакты </a></li>
@@ -623,7 +622,7 @@
                         <li> <a href="#"> Вакансии </a></li>
                         <li> <a href="#"> Цены </a></li>
                     </ul>
-                    <ul class="contact title_padding">
+                    <ul onclick="toggleShow(this)" class="contact title_padding">
                         <li style="padding-left: 35px;" class="title">Контакты<i class="fas fa-chevron-down"></i></li>
                         <li> 
                             <i class="fas fa-map-marker-alt"></i> 
@@ -745,9 +744,17 @@
 
 
 <script type="text/javascript">
-    var x = window.matchMedia("(max-width: 1199px)");
+
+
+
+    function toggleShow(e) {
+        e.classList.toggle("show");
+    }
+
+
+    var x = window.matchMedia("(min-width: 1199px)");
     window.onscroll=function()
-    {myfunction()};
+    {if(x.matches) {myfunction()}};
 
     var header=document.getElementById("demo_aaa");
     var sticky = header.offsetTop;
