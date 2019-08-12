@@ -571,6 +571,12 @@
 	}
 }
 @media (max-width: 480px) and (min-width: 320px) {
+	.news-image {
+		max-width: 340px;
+	}
+	.news-image.image {
+		max-width: ;
+	}
 	.carousel,
 	.carousel-inner,
 	.carousel-inner .item {
