@@ -24,7 +24,6 @@ h6 {
 	display: flex;
 	justify-content: space-between !important;
 	align-items: center;
-	margin-left: -15px;
 }
 #myDiv {
 }
@@ -317,6 +316,7 @@ h6 {
 	font-family: 'Open sans';
 	color: #252523;
 	font-size: 20px;
+	max-width: 340px;
 }
 .read {
 	font-size: 14px;
@@ -607,4 +607,7 @@ h6 {
 }
 .curve img {
 	transform: translateX(1px);
+}
+#dropdownMenuLink {
+	transform: translateX(3px);
 }
