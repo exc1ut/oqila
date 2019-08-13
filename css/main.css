@@ -529,8 +529,8 @@ h6 {
 	top: 50%;
 }
 .partner-logos img {
-	width: 200px;
-	height: 80px;
+	width: 160px;
+	height: auto;
 }
 .quote {
 	flex-direction: column;
@@ -608,6 +608,27 @@ h6 {
 .curve img {
 	transform: translateX(1px);
 }
-#dropdownMenuLink {
+#dropdownMenuLink p img {
 	transform: translateX(3px);
+}
+.service {
+	overflow-y: auto;
+	height: 300px;
+}
+.service::-webkit-scrollbar {
+	width: 7px;
+}
+
+.service::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.service::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 50px #b82020;
+}
+
+.service::-webkit-scrollbar-thumb:hover {
+	-webkit-box-shadow: inset 0 0 50px #b82020;
 }
