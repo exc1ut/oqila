@@ -125,7 +125,7 @@
 
                                 <li>
                                 <div style="margin: 22px 0" class="dropdown">
-                                    <a onclick="toggleTransform(this)" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Услуги<img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
+                                    <a onblur="unTransform()" onclick="toggleTransform(this)" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Услуги<img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
 
                                     <div  id="demo6" class="dropdown-menu d_m_vse_uslugi" aria-labelledby="dropdownMenuLink">
                                       <div class="container">
@@ -152,7 +152,9 @@
                                             </ul>
                                               <ul >
                                                 <li style="color: #fff; ">Другие услуги</li>
-                                                <li  style="padding-top: 20px;"><a href="#">Мобильные <br>  приложения</a></li>
+                                                
+                                                <li  style="padding-top: 20px;"><a href="#">Создание telegram ботов </a></li>
+                                                <li  ><a href="#">Мобильные приложения</a></li>
                                                 <li ><a href="#">Крупномасштабные проекты </a></li>
                                                 
                                             </ul>
@@ -245,9 +247,9 @@
             <div class="col-md-3" >
                 <ul >
                     <li style="color: #fff; padding: 0;">Другие услуги</li>
-                    <li  style="padding-top: 20px;"><a href="#">  Телеграм-боты</a></li>
+                    <li  style="padding-top: 20px;"><a href="#"> Создание telegram ботов </a></li>
                     <li ><a href="#">  Крупные проекты</a></li>
-                    <li ><a href="#">  Мобильные <br>  приложения</a></li>
+                    <li ><a href="#">  Мобильные приложения</a></li>
                     
                 </ul>
             </div>
@@ -629,7 +631,7 @@
                         <li><a href="#">Придумать название фирмы</a></li>
                         <li><a href="#">Логотип</a></li>
                         <li><a href="#">Дизайн сайта</a></li>
-                        <li><a href="#">Мобильные <br>  приложения</a></li>
+                        <li><a href="#">Мобильные приложения</a></li>
                         <li><a href="#">  Телеграм-боты</a></li>
                     </ul>
                     <ul onclick="toggleShow(this)" class="company title_padding">
@@ -768,6 +770,10 @@
 
     function toggleTransform(e) {
         if(x.matches){demo.classList.toggle("uslugi_transform")}
+    }
+    function unTransform()
+    {
+        demo.classList.remove("uslugi_transform");
     }
 
 
