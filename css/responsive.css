@@ -382,6 +382,9 @@
 	.partner-logos img {
 		width: 185px;
 	}
+	.partner-logos-flex:nth-child(2) img:nth-child(1) {
+		transform: translateY(7px);
+	}
 }
 @media (max-width: 900px) {
 	.align {

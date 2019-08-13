@@ -117,55 +117,58 @@
                 <div class="navbar-collapse collapse" id="navbar">
                     <div class="nav-align">
                             <ul class="nav navbar-nav">
-                                <li ><a href="index.html"><p style="font-size: 15px">Разработка сайтов</p></a></li>
-                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Интернет-реклама</p></a></li>
-                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Мобильные-приложения</p></a>
+                                <li ><a href="index.html"><p style="font-size: 15px">Разработка сайтов </p></a></li>
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Интернет маркетинг</p></a></li>
+                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px">Мобильные приложения</p></a>
                     			</li>
                   
 
                                 <li>
                                 <div style="margin: 22px 0" class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Все услуги <img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
+                                    <a onclick="toggleTransform(this)" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><p style="font-size: 15px">Услуги<img style="margin: 0;" src="img/vse_uslugi.png"></p></a>
 
                                     <div  id="demo6" class="dropdown-menu d_m_vse_uslugi" aria-labelledby="dropdownMenuLink">
-                                      <div class="container uslugi_dropdown">
-                                        
+                                      <div class="container">
+                                        <div class="uslugi_dropdown">
                                         <ul>
                                             <li style="color: white; ">Разработка сайтов</li>
-                                            <li style="padding-top: 20px;"><a href="#">  Landing page </a></li>
-                                            <li><a href="#">  Интернет-магазин</a></li>
-                                            <li><a href="#">  Сайт-визитка</a></li>
-                                            <li><a href="#">  Корпоративный</a></li>
+                                            <li style="padding-top: 20px;"><a href="#">Разработка корпоративных сайтов</a></li>
+                                            <li><a href="#">Разработка интернет-магазинов</a></li>
+                                            <li><a href="#"> ​Разработка государственных сайтов </a></li>
                                           </ul>
                                           <ul >
                                                 <li style="color: #ffffff; ">Интернет-реклама</li>
-                                                <li style="padding-top: 20px;"><a href="#">  SEO-оптимизация</a></li>
-                                                <li ><a href="#">  SMM-продвижение</a></li>
-                                                <li ><a href="#">  Контекстная реклама</a></li>
-                                                    
+                                                <li style="padding-top: 20px;"><a href="#">​SEO продвижение сайтов</a></li>
+                                                <li ><a href="#">Анализ сайта - SEO проверк</a></li>
+                                                <li ><a href="#">Размещение рекламы в интернете</a></li>
+                                                <li ><a href="#">SMM продвижение в социальных сетях</a></li>   
+                                                <li ><a href="#">Придумать название фирмы</a></li>
                                          </ul>
                                           <ul >
                                                 <li style="color: #fff; ">Дизайн-проекты</li>
-                                                <li style="padding-top: 20px; "><a href="#">  Веб-дизайн</a></li>
-                                                <li ><a href="#">  Фирменный стиль</a></li>
-                                                <li ><a href="#">  Полиграфия</a></li>
-                                                <li ><a href="#">  Прототип мобильных <br>  приложений</a> </li>
+                                                <li style="padding-top: 20px; "><a href="#">Фирменный стиль</a></li>
+                                                <li ><a href="#">Логотип</a></li>
+                                                <li ><a href="#">Дизайн сайта</a></li>
                                             </ul>
                                               <ul >
                                                 <li style="color: #fff; ">Другие услуги</li>
-                                                <li  style="padding-top: 20px;"><a href="#">  Телеграм-боты</a></li>
-                                                <li ><a href="#">  Крупные проекты</a></li>
-                                                <li ><a href="#">  Мобильные <br>  приложения</a></li>
+                                                <li  style="padding-top: 20px;"><a href="#">Мобильные <br>  приложения</a></li>
+                                                <li ><a href="#">Крупномасштабные проекты </a></li>
                                                 
                                             </ul>
                                                
                                               <ul >
                                                 <li style="color: #fff; ">Наши проекты</li>
-                                                <li style="padding-top: 20px;"><a href="#">  AslBazar</a></li>
-                                                <li ><a href="#">  OqilaCMS</a></li>
+                                                <li style="padding-top: 20px;"><a href="#">Aslbazar</a></li>
+                                                <li ><a href="#">OqilaCMS</a></li>
                                                 
                                             </ul>
+                                            <ul>
+                                                    <li style="color: #fff; ">Публикации </li>
+                                                    <li ><a href="#"></a></li>
+                                                </ul>
                                             </div>
+                                        </div>
                                        
 
                                           
@@ -481,12 +484,17 @@
                                 
 
 
-                                <span class="c-button"> <a style="margin: 0 20px;" class="btn btn-testimonials btn-sm" data-slide="prev" href="#carousel-testimonial" role="button"><span aria-hidden="true" class="fa fa-angle-left"></span> <span class="sr-only">Previous</span></a> 
+                                <span class="c-button"> <a  class="btn btn-testimonials btn-sm" data-slide="prev" href="#carousel-testimonial" role="button"><span aria-hidden="true" class="fa fa-angle-left"></span> <span class="sr-only">Previous</span></a> 
 
                                     <a class="btn btn-testimonials btn-sm" data-slide="next" href="#carousel-testimonial" role="button"><span aria-hidden="true" class="fa fa-angle-right"></span> <span class="sr-only">Next</span></a> 
                                 </span>  
 
                             </div>
+                    </div>
+                    <div class="full">
+                        <p>
+                           <a class="a_title" href="#"> Все отзывы</a>
+                        </p>
                     </div>
                     
                 </div>
@@ -508,9 +516,12 @@
                     <img src="img/paynet_1.png" alt="">
                 </div>
                 <div class="partner-logos-flex" >
-                    <img src="img/payme_01.png" alt="">
+                    <img src="img/payme_2.png" alt="">
                     <img src="img/ipak yuli_1.png" alt="">
                 </div>   
+                <div class="partner-logos-flex" >
+                        <img src="img/kunuz.png" alt="">
+                    </div>  
             </div>
         </div>
     </div>
@@ -524,29 +535,29 @@
 
               
                     <div class="col-md-4 col-sm-6  ">
-                        <div class="card">
-                            
-                            <img class="news-image image " src="img/img-6.jpg">
-                            <div class="calendar">
-                                <span class="c-day">10</span>
-                                <p class="c-month-day">
-                                    Октября<br>
-                                    2016
-                                </p>
-                            </div>
-                            <div class="desc">
-                                <a class="card-title" href="#">
-                                    Яндекс.Такси запустили новый <br>
-                                    тарифный план «Бизнес» для тех ...
-                                </a>
-                            </div>
-                            <a href="#" class="read btn btn-default btn-sm">Читать</a>
-                        </div>   
-                    </div>
+                            <div class="card">
+                                
+                                <a href="#"><img class="news-image image " src="img/img-6.jpg"></a>
+                                <div class="calendar">
+                                    <span class="c-day">10</span>
+                                    <p class="c-month-day">
+                                        Октября<br>
+                                        2016
+                                    </p>
+                                </div>
+                                <div class="desc">
+                                    <a class="card-title" href="#">
+                                        Яндекс.Такси запустили новый <br>
+                                        тарифный план «Бизнес» для тех ...
+                                    </a>
+                                </div>
+                                <a href="#" class="read btn btn-default btn-sm">Читать</a>
+                            </div>   
+                        </div>
                     <div class="col-md-4 col-sm-6  ">
                             <div class="card">
                                 
-                                <img class="news-image image " src="img/img-6.jpg">
+                                <a href="#"><img class="news-image image " src="img/img-6.jpg"></a>
                                 <div class="calendar">
                                     <span class="c-day">10</span>
                                     <p class="c-month-day">
@@ -566,7 +577,7 @@
                         <div class="col-md-4 col-sm-6  ">
                                 <div class="card">
                                     
-                                    <img class="news-image image " src="img/img-6.jpg">
+                                    <a href="#"><img class="news-image image " src="img/img-6.jpg"></a>
                                     <div class="calendar">
                                         <span class="c-day">10</span>
                                         <p class="c-month-day">
@@ -605,19 +616,27 @@
                     </div>
                     <ul onclick="toggleShow(this)" class="service title_padding">
                         <li class="title">Услуги<i class="fas fa-chevron-down"></i></li>
-                        <li> <a href="#"> Разработка сайтов </a></li>
-                        <li> <a href="#"> SEO-оптимизация </a></li>
-                        <li> <a href="#"> Разработка ботов</a></li>
-                        <li> <a href="#"> Разработка крупномасштабных <br>
-                                проектов</a></li>
-                        <li> <a href="#"> Разработка мобильных<br>
-                                приложений</a></li>
+                        <li><a href="#"> Разработка сайтов </a></li>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Разработка корпоративных сайтов</a></li>
+                        <li><a href="#">Разработка интернет-магазинов</a></li>
+                        <li><a href="#"> ​Разработка государственных сайтов </a></li>
+                        <li><a href="#">Интернет-реклама</a></li>
+                        <li><a href="#">​SEO продвижение сайтов</a></li>
+                        <li><a href="#">Анализ сайта - SEO проверк</a></li>
+                        <li><a href="#">Размещение рекламы в интернете</a></li>
+                        <li><a href="#">SMM продвижение в социальных сетях</a></li>   
+                        <li><a href="#">Придумать название фирмы</a></li>
+                        <li><a href="#">Логотип</a></li>
+                        <li><a href="#">Дизайн сайта</a></li>
+                        <li><a href="#">Мобильные <br>  приложения</a></li>
+                        <li><a href="#">  Телеграм-боты</a></li>
                     </ul>
                     <ul onclick="toggleShow(this)" class="company title_padding">
                         <li class="title">Компания<i class="fas fa-chevron-down"></i></li>
                         <li> <a href="#"> О нас </a></li>
                         <li> <a href="#"> Контакты </a></li>
-                        <li> <a href="#"> Новости </a></li>
+                        <li> <a href="#"> Отзывы  </a></li>
                         <li> <a href="#"> Портфолио </a></li>
                         <li> <a href="#"> Вакансии </a></li>
                         <li> <a href="#"> Цены </a></li>
@@ -745,12 +764,19 @@
 
 <script type="text/javascript">
 
+    let demo = document.getElementById("demo6");
+
+    function toggleTransform(e) {
+        demo.classList.toggle("uslugi_transform")
+    }
 
 
     function toggleShow(e) {
         e.classList.toggle("show");
     }
 
+
+    
 
     var x = window.matchMedia("(min-width: 1199px)");
     window.onscroll=function()
