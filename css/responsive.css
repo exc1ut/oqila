@@ -46,6 +46,9 @@
 }
 
 @media (min-width: 768px) {
+	.navbar-toggle.collapsed {
+		margin-top: 18px;
+	}
 	.history-separator {
 		display: none;
 	}
