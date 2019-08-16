@@ -340,7 +340,7 @@ h6 {
 }
 .footer ul {
 	list-style-type: none;
-	transform: translateY(30px);
+	margin-top: 35px;
 }
 
 .r-navbar {
@@ -376,6 +376,7 @@ h6 {
 
 	padding: 35px 35px;
 	background: #ff3535;
+	padding-bottom: 60px;
 }
 .footer-about i {
 	color: #fff;
@@ -664,3 +665,4 @@ h6 {
 .copyright-flex img {
 	margin: 0;
 }
+.footer-inside;
