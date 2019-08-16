@@ -340,6 +340,7 @@ h6 {
 }
 .footer ul {
 	list-style-type: none;
+	transform: translateY(30px);
 }
 
 .r-navbar {
@@ -361,7 +362,6 @@ h6 {
 	color: #8e8e8e;
 	font-size: 20px;
 	font-weight: 500;
-	margin-top: 20px;
 }
 .footer ul i {
 	color: #8e8e8e;
