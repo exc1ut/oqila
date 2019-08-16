@@ -335,6 +335,8 @@ h6 {
 	padding-top: 45px;
 	display: flex;
 	justify-content: space-between;
+	flex-grow: 1;
+	padding-right: 70px;
 }
 .footer ul {
 	list-style-type: none;
@@ -359,6 +361,7 @@ h6 {
 	color: #8e8e8e;
 	font-size: 20px;
 	font-weight: 500;
+	margin-top: 40px;
 }
 .footer ul i {
 	color: #8e8e8e;
@@ -368,7 +371,7 @@ h6 {
 .footer-about {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	width: 300px;
 
 	padding: 35px 35px;
@@ -381,7 +384,7 @@ h6 {
 	margin-left: 7px;
 }
 .footer-about p {
-	text-align: center;
+	text-align: left;
 	margin-bottom: 70px;
 	color: #fff;
 }
@@ -631,14 +634,33 @@ h6 {
 	-webkit-box-shadow: inset 0 0 50px #b82020;
 }
 .service::-webkit-scrollbar-thumb:active {
-	-webkit-box-shadow: inset 0 0 50px #b82020, 0 0 5px;
+	`: inset 0 0 50px #b82020, 0 0 5px;
+}
+.service_list {
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+.service {
+	display: flex;
+	flex-flow: column;
+	padding: 0;
 }
 .service_list ul {
 	padding: 0;
 }
-.service_list ul:nth-child(2) {
-	padding-left: 30px;
-}
+
 .company {
-	padding-left: 30px;
+	padding: 0;
+}
+.service.right .title {
+	margin-bottom: 50px;
+}
+.copyright-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copyright-flex img {
+	margin: 0;
 }

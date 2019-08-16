@@ -111,7 +111,6 @@ Author URL: http://themeforest.net/user/yasirzia
 
 .cont {
   position: relative;
-  
 }
 
 .imag {
@@ -638,23 +637,6 @@ ul.nostyle i {
   transition: border-color 0s ease-out .5s, width .25s ease-out .5s, height .25s ease-out .75s;
   border-bottom-color: #643cc1;
   border-left-color: #643cc1;
-}
-::selection {
-	background: #ff3535;
-	color: #ffffff;
-	text-shadow: none;
-}
-::-moz-selection {
-	background: #ff3535;
-	/* Firefox */
-	color: #ffffff;
-	text-shadow: none;
-}
-::-webkit-selection {
-	background: #ff3535;
-	/* Safari */
-	color: #ffffff;
-	text-shadow: none;
 }
 .spacer{
 	height:1px;
